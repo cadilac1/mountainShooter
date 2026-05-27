@@ -2,7 +2,7 @@ import pygame
 
 from code.MENU2 import Menu, MENU_OPTION
 from code.const import WIN_WIDTH, WIN_HEIGHT
-from level import Level
+from code.level import Level
 
 
 class Game:
@@ -11,10 +11,6 @@ class Game:
         self.window = None
         pygame.init()
         self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))
-
-        def run(self):
-            print("setup start")
-            print("setup end")
 
         print("loop start")
         while True:
