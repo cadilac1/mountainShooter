@@ -14,17 +14,18 @@ class Level:
         self.entity_list.extend(EntityFactory.get_entity("Level1Bg")
         )
 
-        def run(self):
-            while True:
+    def run(self):
 
-                for event in pygame.event.get():
-                    if event.type == pygame.QUIT:
-                        pygame.quit()
-                        quit()
+        while True:
 
-                for ent in self.entity_list:
-                    self.window.blit(source=ent.surf, dest=ent.rect)
-                    ent.move()
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    pygame.quit()
+                    quit()
 
-                pygame.display.flip()
-            pass
+            for ent in self.entity_list:
+                self.window.blit(source=ent.surf, dest=ent.rect)
+                ent.move()
+
+            pygame.display.flip()
+        pass

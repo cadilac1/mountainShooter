@@ -1,4 +1,4 @@
-from code.const import WIN_WIDTH
+from code.const import WIN_WIDTH, ENTITY_SPEED
 from code.entity import Entity
 
 class Background(Entity):
